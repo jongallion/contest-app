@@ -1,4 +1,4 @@
-# README
+# Contest App
 
 ## Project Description
 
@@ -27,14 +27,11 @@ Content and Styling have not been included as part of the app.
 ## Project Setup
 
 ### Ruby version
-Make sure you have Ruby 2.6.0 and Node.js 8.x or 10.x; if you don't already
-have a version manager for Ruby and Node.js, [asdf](https://github.com/asdf-vm/asdf)
-will handle both.
+Make sure you have Ruby 2.6.0 
 
 ```Shell
 gem install bundler
 bundle install
-yarn install
 ```
 
 ### Configure Database
@@ -58,12 +55,3 @@ bundle exec rake db:setup
 ```Shell
 RAILS_ENV=test bundle exec rake db:reset
 ```
-
-
-Things you may want to cover:
-
-* System dependencies
-
-* Configuration
-
-* How to run the test suite
