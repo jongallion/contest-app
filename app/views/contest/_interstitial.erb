@@ -1,0 +1,16 @@
+<header class="modal__header">
+  <h2 class="modal__title" id="modal-1-title">
+    <%= title %>
+  </h2>
+  <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+</header>
+<main class="modal__content" id="modal-1-content">
+  <p class="ContestModal-header">
+    We’re giving away a $25 Amazon gift card <strong>every day</strong> this month, and a grand prize of $5,000.
+    <%= link_to "See Details", "/contest/rules", target: "_blank", class: "ContestModal-link" %>
+  </p>
+  <div class="ContestModal-challengeWrapper"><%= details %></div>
+</main>
+<footer class="modal__footer">
+  <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+</footer>

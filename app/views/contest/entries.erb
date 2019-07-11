@@ -1,0 +1,19 @@
+<h1>Contest Entries</h1>
+<h2>Entries for <%= contest_date || "Full Contest" %></h2>
+<%= link_to 'Download CSV list', params.merge(format: :csv).permit(:format) %> | 
+<%= link_to 'Download XLS list', params.merge(format: :xls).permit(:format) %>
+<br><br>
+
+<table>
+  <thead>
+    <td></td>
+    <td>Last Name</td>
+    <td>First Name</td>
+    <td>Email</td>
+    <td>User ID</td>
+    <td>Entry Date</td>
+  </thead>
+  <tbody>
+    <%= render partial: "entry", collection: @entries %>
+  </tbody>
+</table>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:x="urn:schemas-microsoft-com:office:excel"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="Entries">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">Last Name</Data></Cell>
+        <Cell><Data ss:Type="String">First Name</Data></Cell>
+        <Cell><Data ss:Type="String">Email</Data></Cell>
+        <Cell><Data ss:Type="String">User ID</Data></Cell>
+        <Cell><Data ss:Type="String">Entry Date</Data></Cell>
+      </Row>
+    <% @entries.each do |entry| %>
+      <Row>
+        <Cell><Data ss:Type="String"><%= entry.last_name %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= entry.first_name %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= entry.email %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= entry.user_id %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= entry.created_at %></Data></Cell>
+      </Row>
+    <% end %>
+    </Table>
+  </Worksheet>
+</Workbook>
