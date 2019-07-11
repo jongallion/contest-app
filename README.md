@@ -3,7 +3,7 @@
 ## Project Description
 
 This app is meant to be a code example. 
-The code is pulled from another app that provides user authentication. 
+The contest app code is pulled from another app that provides user authentication. 
 Users are registered for the contest when they sign in, if the user is eligible.
 
 Methods that made calls to other parts of the app have been modified to return a 
